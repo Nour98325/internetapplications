@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+   
+    input:hover,select:hover{
+      background-color: cornflowerblue;
+    }
+    
+    fieldset{
+      border: 2px rgb(59, 177, 118) dotted;
+      border-radius: 30px;
+      margin: 3% 25% ;
+      width: 50%;
+    }
+    legend{
+      margin-left: 5%;
+      color:yellow;
+      font-weight: bold;
+      font-size: larger;
+    }
+    label{
+      font-weight: bold;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body style="background-color:black;">
+  
+  <form >
+    <fieldset style="background-color: crimson;">
+      <legend>DETAILS</legend>
+      <label>Name: </label><input type="text" list="it" placeholder="&#128151 &#128155" autofocus>
+      <datalist id="it" ><option>yara</option><option>Nour</option>
+        <option>Sara</option><option>Hala</option></datalist><br><br>
+        <label>Your Password: </label><input type="password"><br><br>
+        <label>Class: </label>
+        <select>
+          <optgroup label="علمي">
+            <option selected>عاشر</option><option>الحادي عشر</option><option>بكالوريا</option>
+          </optgroup>
+          <optgroup label="أدبي">
+            <option>عاشر</option><option>الحادي عشر</option><option>بكالوريا</option>
+          </optgroup>
+        </select><br><br>
+        <label>Your Favorite Subject: </label><br>
+        <input type="checkbox">Maths<br>
+        <input type="checkbox">Arabic<br>
+        <input type="checkbox">Scienc<br>
+        <input type="checkbox">Music<br>
+        <input type="checkbox">Art<br><br>
+        <label>Do You Like Programming? </label>
+        <input type="radio" name="o">Yes
+        <input type="radio" name="o">No<br><br>
+        <label>Your Favorite Colour  </label><input type="color"><br><br>
+        <label>Your Birth: </label><input type="date"><br><br>
+        <label>Your Favorite Number </label><input type="number" max="100" min="1">
+    </fieldset>
+  </form>
+</body>
+</html>
